@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TchadBoutique | Vente en ligne au Tchad</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Tchad<span>Boutique</span></span>
+                <img src="images/logo.jpg" alt="Logo TchadBoutique" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="avis.html">Avis</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="stats.html">Stats</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bannière Hero -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Votre boutique en ligne 100% tchadienne</h1>
+            <p>Matériel scolaire, high-tech et fournitures pour étudiants et commerçants</p>
+            <div>
+                <a href="produits.html" class="btn">Voir nos produits</a>
+                <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Produits Phares -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Nos <span>Produits</span> Stars</h2>
+            <p>Découvrez les préférés de nos clients</p>
+        </div>
+        <div class="products-grid">
+            <!-- Produit 1 -->
+            <div class="product-card">
+                <div class="product-badge">Promo</div>
+                <img src="images/sac-dos.jpg" alt="Sac à dos scolaire" class="product-img">
+                <div class="product-info">
+                    <h3>Sac à dos Premium</h3>
+                    <p>Idéal pour les étudiants, résistant et spacieux</p>
+                    <div class="product-price">12,500 XAF <span>15,000 XAF</span></div>
+                    <a href="produits.html#sac-dos" class="btn">Voir détails</a>
+                </div>
+            </div>
+            
+            <!-- Produit 2 -->
+            <div class="product-card">
+                <div class="product-badge">Nouveau</div>
+                <img src="images/powerbank.jpg" alt="Powerbank" class="product-img">
+                <div class="product-info">
+                    <h3>Powerbank 20,000mAh</h3>
+                    <p>Charge rapide pour tous vos appareils</p>
+                    <div class="product-price">25,000 XAF</div>
+                    <a href="produits.html#powerbank" class="btn">Voir détails</a>
+                </div>
+            </div>
+            <!-- Produit 5 -->
+            <div class="product-card">
+                <div class="product-badge">Promo</div>
+                <img src="images/calculatrice.jpg" alt="Calculatrice scientifique" class="product-img">
+                <div class="product-info">
+                    <h3>Calculatrice Scientifique</h3>
+                    <p>570 fonctions, écran haute résolution</p>
+                    <div class="product-price">15,000 XAF <span>18,000 XAF</span></div>
+                    <a href="produits.html#calculatrice" class="btn">Voir détails</a>
+                </div>
+            </div>            
+            
+            
+          
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://wa.me/23563200393" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="mailto:karamokoabdoulayeamadou11@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://instagram.com/karamokoabdoulayeamadou" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://tiktok.com/@arobase_ro_trefle_a_5" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TchadBoutique | Visiteurs: <span class="visitor-count">1,458</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

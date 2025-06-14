@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques | TchadBoutique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Tchad<span>Boutique</span></span>
+                <img src="images/logo.jpg" alt="Logo TchadBoutique" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="avis.html">Avis</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="stats.html" class="active">Stats</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Statistiques Principales -->
+    <section class="stats-hero">
+        <div class="container">
+            <h1><span>Statistiques</span> en Temps Réel</h1>
+            <p>Suivez la performance de votre boutique en ligne</p>
+            
+            <div class="live-stats">
+                <div class="stat-card animated fadeInUp" style="animation-delay: 0.2s;">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="visitor-count">2,458</div>
+                        <div class="stat-label">Visiteurs ce mois</div>
+                    </div>
+                    <div class="stat-badge increase">
+                        <i class="fas fa-arrow-up"></i> 12%
+                    </div>
+                </div>
+                
+                <div class="stat-card animated fadeInUp" style="animation-delay: 0.4s;">
+                    <div class="stat-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="order-count">328</div>
+                        <div class="stat-label">Commandes</div>
+                    </div>
+                    <div class="stat-badge increase">
+                        <i class="fas fa-arrow-up"></i> 8%
+                    </div>
+                </div>
+                
+                <div class="stat-card animated fadeInUp" style="animation-delay: 0.6s;">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="satisfaction-rate">94%</div>
+                        <div class="stat-label">Satisfaction</div>
+                    </div>
+                    <div class="stat-badge neutral">
+                        <i class="fas fa-equals"></i> Stable
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graphiques Animés -->
+    <section class="graphs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Analyses <span>Détaillées</span></h2>
+                <p>Données clés pour optimiser votre boutique</p>
+            </div>
+            
+            <div class="graph-row">
+                <div class="graph-container animated fadeInUp">
+                    <h3><i class="fas fa-chart-line"></i> Produits les Plus Vendus</h3>
+                    <div class="bar-graph">
+                        <div class="bar-item">
+                            <div class="bar-label">Sac à dos Premium</div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="--width: 90%;" data-value="142"></div>
+                            </div>
+                            <div class="bar-value">142 ventes</div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label">Powerbank 20,000mAh</div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="--width: 70%;" data-value="110"></div>
+                            </div>
+                            <div class="bar-value">110 ventes</div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label">Pack Cahiers (x10)</div>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="--width: 50%;" data-value="78"></div>
+                            </div>
+                            <div class="bar-value">78 ventes</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="graph-container animated fadeInUp">
+                    <h3><i class="fas fa-calendar-alt"></i> Trafic Mensuel</h3>
+                    <div class="line-graph">
+                        <div class="line-point" style="--value: 30%;" data-month="Jan"></div>
+                        <div class="line-point" style="--value: 50%;" data-month="Fév"></div>
+                        <div class="line-point" style="--value: 70%;" data-month="Mar"></div>
+                        <div class="line-point" style="--value: 90%;" data-month="Avr"></div>
+                        <div class="line-point" style="--value: 60%;" data-month="Mai"></div>
+                        <div class="line-point" style="--value: 80%;" data-month="Juin"></div>
+                    </div>
+                    <div class="line-labels">
+                        <span>Jan</span>
+                        <span>Fév</span>
+                        <span>Mar</span>
+                        <span>Avr</span>
+                        <span>Mai</span>
+                        <span>Juin</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="graph-row">
+                <div class="graph-container animated fadeInUp">
+                    <h3><i class="fas fa-map-marker-alt"></i> Clients par Région</h3>
+                    <div class="map-graph">
+                        <div class="map-region" style="--size: 100%;" data-region="N'Djaména">65%</div>
+                        <div class="map-region" style="--size: 70%;" data-region="Moundou">45%</div>
+                        <div class="map-region" style="--size: 50%;" data-region="Sarh">30%</div>
+                        <div class="map-region" style="--size: 40%;" data-region="Autres">25%</div>
+                    </div>
+                </div>
+                
+                <div class="graph-container animated fadeInUp">
+                    <h3><i class="fas fa-clock"></i> Heures d'Activité</h3>
+                    <div class="clock-graph">
+                        <div class="clock-hand" style="--rotation: 30deg;" data-time="9h-12h"></div>
+                        <div class="clock-hand" style="--rotation: 90deg;" data-time="12h-15h"></div>
+                        <div class="clock-hand" style="--rotation: 60deg;" data-time="15h-18h"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Feedback Clients -->
+    <section class="feedback-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Feedback des <span>Clients</span></h2>
+                <p>Ce que vos clients pensent de votre boutique</p>
+            </div>
+            
+            <div class="feedback-container">
+                <div class="feedback-form animated fadeInUp">
+                    <h3><i class="fas fa-comment-dots"></i> Donnez Votre Avis</h3>
+                    <form id="statsReviewForm">
+                        <div class="form-group">
+                            <label>Type de feedback :</label>
+                            <select required>
+                                <option value="" disabled selected>Sélectionnez...</option>
+                                <option>Expérience d'achat</option>
+                                <option>Suggestion d'amélioration</option>
+                                <option>Problème technique</option>
+                                <option>Autre commentaire</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea placeholder="Décrivez votre expérience ou suggestions..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group rating-group">
+                            <label>Note globale :</label>
+                            <div class="star-rating">
+                                <input type="radio" id="rate5" name="rating" value="5">
+                                <label for="rate5"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="rate4" name="rating" value="4">
+                                <label for="rate4"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="rate3" name="rating" value="3">
+                                <label for="rate3"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="rate2" name="rating" value="2">
+                                <label for="rate2"><i class="fas fa-star"></i></label>
+                                <input type="radio" id="rate1" name="rating" value="1">
+                                <label for="rate1"><i class="fas fa-star"></i></label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit pulse-animation">
+                            <i class="fas fa-paper-plane"></i> Publier
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="feedback-list animated fadeInUp">
+                    <h3><i class="fas fa-comments"></i> Derniers Avis</h3>
+                    
+                    <div class="feedback-item">
+                        <div class="feedback-header">
+                            <img src="images/client1.jpg" alt="Client">
+                            <div>
+                                <div class="client-name">Amina K.</div>
+                                <div class="feedback-date">15/10/2023</div>
+                                <div class="feedback-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-content">
+                            <p>"J'ai reçu ma commande en moins de 24h ! Le sac à dos est parfait pour mes besoins universitaires."</p>
+                            <div class="feedback-shared">
+                                <span>Partagé sur :</span>
+                                <i class="fab fa-whatsapp"></i>
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feedback-item">
+                        <div class="feedback-header">
+                            <img src="images/client2.jpg" alt="Client">
+                            <div>
+                                <div class="client-name">Mahamat S.</div>
+                                <div class="feedback-date">12/10/2023</div>
+                                <div class="feedback-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback-content">
+                            <p>"Bon service mais le suivi de commande pourrait être amélioré. J'aimerais voir plus de produits high-tech."</p>
+                            <div class="feedback-response">
+                                <strong>Réponse de l'équipe :</strong>
+                                <p>Merci pour votre feedback ! Nous travaillons sur un nouveau système de suivi et élargissons notre gamme tech.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://wa.me/23563200393" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="mailto:karamokoabdoulayeamadou11@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://instagram.com/karamokoabdoulayeamadou" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://tiktok.com/@arobase_ro_trefle_a_5" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TchadBoutique | Visiteurs: <span class="visitor-count">2,458</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

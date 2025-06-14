@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | TchadBoutique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Tchad<span>Boutique</span></span>
+                <img src="images/logo.jpg" alt="Logo TchadBoutique" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="avis.html">Avis</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="stats.html">Stats</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Contact -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contactez-<span>Nous</span></h2>
+                <p>Nous sommes disponibles sur toutes ces plateformes</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Carte WhatsApp -->
+                <div class="contact-card whatsapp">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Chat instantané avec notre équipe</p>
+                    <a href="https://wa.me/23563200393" class="btn-contact" target="_blank">
+                        Envoyer un message
+                    </a>
+                </div>
+
+                <!-- Carte Email -->
+                <div class="contact-card email">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>Réponse sous 24 heures</p>
+                    <a href="mailto:karamokoabdoulayeamadou11@gmail.com" class="btn-contact" target="_blank">
+                        Écrire un email
+                    </a>
+                </div>
+
+                <!-- Carte Instagram -->
+                <div class="contact-card instagram">
+                    <div class="contact-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>Découvrez nos nouveautés</p>
+                    <a href="https://instagram.com/karamokoabdoulayeamadou" class="btn-contact" target="_blank">
+                        Nous suivre
+                    </a>
+                </div>
+
+                <!-- Carte TikTok -->
+                <div class="contact-card tiktok">
+                    <div class="contact-icon">
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                    <h3>TikTok</h3>
+                    <p>Contenu exclusif</p>
+                    <a href="https://tiktok.com/@arobase_ro_trefle_a_5" class="btn-contact" target="_blank">
+                        Nous découvrir
+                    </a>
+                </div>
+
+                <!-- Formulaire de contact -->
+                <div class="contact-form">
+                    <h3>Formulaire de contact</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="Votre nom" id="contactName" required>
+                        <input type="email" placeholder="Votre email" id="contactEmail" required>
+                        <input type="tel" placeholder="Téléphone (optionnel)" id="contactPhone">
+                        <select id="contactSubject" required>
+                            <option value="" disabled selected>Sujet</option>
+                            <option>Commande</option>
+                            <option>Livraison</option>
+                            <option>Retour produit</option>
+                            <option>Autre</option>
+                        </select>
+                        <textarea placeholder="Votre message..." id="contactMessage" required></textarea>
+                        <button type="submit" class="btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://wa.me/23563200393" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="mailto:karamokoabdoulayeamadou11@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://instagram.com/karamokoabdoulayeamadou" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://tiktok.com/@arobase_ro_trefle_a_5" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TchadBoutique | Visiteurs: <span class="visitor-count">1,458</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avis Clients | TchadBoutique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">Tchad<span>Boutique</span></span>
+                <img src="images/logo.jpg" alt="Logo TchadBoutique" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="avis.html" class="active">Avis</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="stats.html">Stats</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Avis -->
+    <section class="avis-section">
+        <div class="container avis-container">
+            <!-- Formulaire d'Avis -->
+            <div class="avis-form">
+                <h3>Partagez votre expérience</h3>
+                <p class="slogan">Votre tranquillité est notre préoccupation</p>
+                <form id="reviewForm">
+                    <input type="text" placeholder="Votre nom" id="reviewName" required>
+                    <select id="reviewProduct" required>
+                        <option value="" disabled selected>Choisissez un produit</option>
+                        <option>Sac à dos Premium</option>
+                        <option>Powerbank 20,000mAh</option>
+                        <option>Pack Cahiers (x10)</option>
+                        <option>Ordinateur Portable</option>
+                        <option>Calculatrice Scientifique</option>
+                    </select>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="rating" value="5">
+                        <label for="star5"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2"><i class="fas fa-star"></i></label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1"><i class="fas fa-star"></i></label>
+                    </div>
+                    <textarea placeholder="Décrivez votre expérience..." id="reviewText" required></textarea>
+                    <button type="submit" class="btn">Publier</button>
+                </form>
+            </div>
+
+            <!-- Liste des Avis -->
+            <div class="avis-grid">
+                <h2>Avis des <span>Clients</span></h2>
+                <p class="slogan">Nous nous améliorons grâce à vos retours</p>
+                
+                <!-- Avis 1 -->
+                <div class="avis-card">
+                    <div class="avis-header">
+                        <img src="https://i.ibb.co/0mXQz8B/client-jeune.jpg" alt="Amina K.">
+                        <div>
+                            <div class="avis-author">Amina K.</div>
+                            <div class="avis-date">15/10/2023</div>
+                        </div>
+                    </div>
+                    <div class="avis-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Livraison rapide à N'Djaména, produit conforme. Je recommande !"</p>
+                    <div class="produit-avis">Sac à dos Premium</div>
+                </div>
+                
+                <!-- Avis 2 -->
+                <div class="avis-card">
+                    <div class="avis-header">
+                        <img src="https://i.ibb.co/0mXQz8B/client-jeune.jpg" alt="Mahamat S.">
+                        <div>
+                            <div class="avis-author">Mahamat S.</div>
+                            <div class="avis-date">12/10/2023</div>
+                        </div>
+                    </div>
+                    <div class="avis-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>"Bon service mais le suivi de commande pourrait être amélioré. J'aimerais voir plus de produits high-tech."</p>
+                    <div class="produit-avis">Powerbank 20,000mAh</div>
+                </div>
+                
+                <!-- Avis 3 -->
+                <div class="avis-card">
+                    <div class="avis-header">
+                        <img src="https://i.ibb.co/0mXQz8B/client-jeune.jpg" alt="Fatimé D.">
+                        <div>
+                            <div class="avis-author">Fatimé D.</div>
+                            <div class="avis-date">08/10/2023</div>
+                        </div>
+                    </div>
+                    <div class="avis-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Produits de qualité, mais délai de livraison un peu long pour Moundou. Prix très compétitifs."</p>
+                    <div class="produit-avis">Pack Cahiers (x10)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://wa.me/23563200393" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="mailto:karamokoabdoulayeamadou11@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://instagram.com/karamokoabdoulayeamadou" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://tiktok.com/@arobase_ro_trefle_a_5" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TchadBoutique | Visiteurs: <span class="visitor-count">1,458</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>    
+</body>
+</html>
